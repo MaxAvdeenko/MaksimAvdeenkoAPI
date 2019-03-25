@@ -1,5 +1,4 @@
 import beans.YandexSpellerAnswer;
-import core.CheckResponse;
 import core.YandexSpellerApi;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -16,7 +15,6 @@ import static core.CheckResponse.checkAnswer;
 
 
 public class YandexSpellerCheckTextsTest {
-    CheckResponse checkingAnswer = new CheckResponse();
 
     @DataProvider
     public Object[][] unknownEnWordError() {
