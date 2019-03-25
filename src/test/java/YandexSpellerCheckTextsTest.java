@@ -98,7 +98,7 @@ public class YandexSpellerCheckTextsTest {
         };
     }
 
-    //Service Bug - duplicate word not found(then unknown word error)
+    //Bug was found - duplicate word not found(then unknown word error)
     @Test(dataProvider = "repeatWords")
     public void checkRepeatWordOption(String[] texts, Languages lang, List[] expectedSuggestions) {
         List<List<YandexSpellerAnswer>> answer =
